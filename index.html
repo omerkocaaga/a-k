@@ -1,22 +1,49 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+<html>
+
+<head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script type="text/javascript" charset="utf-8" src="assets/js/jquery.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="assets/js/main.js"></script>
-    <title>Dj Serdar Kufurlu</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="rate">Rate your speech.</div>
-      <input type="text" id="txt_name" placeholder="Type something...">
-      <button id="rate" style="display:none">Enter</button>
-    </div>
+    <!-- <link rel="stylesheet" type="text/css" href="assets/less/main.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+    <title>Foo</title>
+</head>
 
-    <div class="modal">
-      <div class="result">Your speech rate is <span id="res"></span></div>
-      <div class="center"><button id="tryAgain">Try again</button></div>
-    </div>
-  </body>
+<body>
+    <main>
+        <img src="assets/img/logo.svg" />
+        <!-- <p>Algısal kısıtlamalarınız nedir?</p> -->
+        <section>
+            <textarea placeholder="Aklınızdakini paylaşın..."></textarea>
+            <small></small>
+        </section>
+
+        <article>
+            <h2></h2>
+            <strong>
+                <i></i>
+            </strong>
+        </article>
+        <div class="info" id="modalOpener">a** k** nedir?</div>
+        <div class="modal" id="theModal">
+          <div class="insideModal">
+            <span class="close">&times;</span>
+            <img src="assets/img/logo.svg" />
+            <p>Anonim olarak varolduğumuz mecralarda, diğerlerinin aksine kendimizi daha özgür, daha farklı ya da daha kendimiz gibi hissediyoruz. Ancak çoğu zaman bu varoluşun gerektirdiği sorumluluğu görmezden geliyoruz. Hatta bazen çizgiyi aşıp, ifadelerimizin içine hakaret yahut nefret söylemi içeren parçalar koyuyoruz.</p>
+            <p>A** k** size tamamen anonim olduğunuz ve kesinlikle kayıt altına alınmayan bir ifade ortamı sunuyor. Bunu bir test alanı olarak düşünebilirsiniz. İfadelerinizde ne kadar hakaret veya nefret söylemi var ölçüyor ve size bildiriyor.</p>
+            <p>Şimdi deneme sırası sizde. Algısal kısıtlamalarınız nedir?</p>
+
+            <!-- <div id="modalCloser">Şimdi Dene!</div> -->
+          </div>
+        </div>
+
+    </main>
+
+</body>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/settings.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/dom.js"></script>
+
 </html>
